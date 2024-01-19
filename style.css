@@ -68,7 +68,7 @@ p{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(./assets/home-bg1.png) no-repeat;
+    background: url(home-bg1.png) no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
