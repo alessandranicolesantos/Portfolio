@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Resetting margin and padding for all elements */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Setting font color and font family to all elements in body*/
+body{
+    color:#493315;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting font family and weight for paragraphs */
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Setting position, padding, background, and layout for the header */
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 20px 10%;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*Setting position and font designs to the text logo of the web */
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*For navigation bar components  */
+.navbar a{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #493315;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+/*For navigation bar animation*/
+.navbar a:hover{
+    color:#e56400;
+}
+
+/*Styling for the home section*/
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(./assets/home-bg1.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+
+/*Setting font styles for the Greeting in the home section*/
+#greet {
+    font-size: 80px;
+    font-weight: 300;
+    line-break: 20px;
+}
+
+/*Setting font-size to all p elements in the home section*/
+.home-content p {
+    font-size: 20px;
+}
+
+/*Setting font-size to all h3 elements in the home section*/
+.home-content h3{
+    font-size: 40px;
+}
+
+/*Styling for the social media buttons in the home section*/
+.home-socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #e56400;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+/*Setting animation for socials buttons in the home section*/
+.home-socials a:hover{
+    background: #e56400;
+    color: #493315;
+}
+
+/*Setting layout in the about section*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.0 rem;
+    align-items: center;
+}
+
+/*Setting image position and layout in the about section*/
+.abt-img img{
+    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    max-width: 100%;
+    height: 90%;
+    width: 90%;
+}
+    
+/*Setting font-size and color for all h2 elements in the about-content section*/
+.about-content h2{
+    font-size:30px;
+    color:#493315
+}
+
+/*Setting the font and layout of the text in about section*/ 
+.about-text{
+  font-size: 18px;
+  font-weight: 300;
+  color: #493315;
+  line-height: 1.5;
+  margin: 15px 0 30px;
+}
+
+/*Setting the font styling and text alignment in the resume section*/
+.resume h2{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color:#493315;
+
+}
+
+/*Styling download button of CV in the resume section*/
+.cv-btn-box {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 28px;
+    height:auto;
+    background: #e56400;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*Setting the text alignment of the cv file in the resume section */
+.cv-file{
+    text-align: center;
+}
+
+/*Styling for the cv image version in the resume section */
+.cv-img{
+    display: block;
+    height: auto;
+    width: 50%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border: 2px solid #e56400;
+}
+
+/*Setting the title text layout in portfolio section*/
+.port-title{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/*Setting border for the portfolio's sample projects*/
+.port-content{
+    border: 2px solid #e56400;
+}
+
+/*Setting the position of the image in portfolio section*/ 
+.port-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:60%;
+    width: 50%;
+}
+
+/*Styling the text for portfolio's description*/
+.port-content .description{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Setting the layout of the contact container*/
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.0 rem;
+    align-items: center;
+}
+
+/*Styling the text and position of the content in contact section*/
+.contact-text h2{
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-left: 100px;
+    padding-top: 60px;
+    padding-bottom: 1px; 
+}
+
+/*Styling the text and position of the all p elements in contact section*/
+.contact-text p{
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+/*Styling the text and position of the all h4 elements in contact section*/
+.contact-text h4{
+    font-size: 20px;
+    padding-left: 100px;
+    
+}
+
+/*Styling the social buttons in contact section*/
+.contact-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    color:#e56400;
+    border: 2px solid #e56400;
+    border-radius: 50%;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 60px 15px 40px 0;
+}
+
+/*Setting the hover on all social buttons in contact section*/
+.contact-icon a:hover{
+    background: #e56400;
+    color: #493315;
+}
+
+/*Setting the background, display and margin of footer*/
+.footer{
+    display: block;
+    background-color: #EFE5D8;
+    margin: 100px;
+}
+
+/*Setting the text-alignment and font-weight on all p elements in the footer section*/
+.footer p{
+    text-align: center;
+    font-weight: bold;
+}
